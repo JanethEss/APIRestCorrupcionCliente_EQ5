@@ -1,0 +1,85 @@
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+	width: 60%;
+	position: relative;
+	margin: 10% auto;
+	padding: 3%;
+	border-radius: 10px;
+	background: #fff;	
+}
+.close {
+	background: #6e1d38;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 30px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: #a73b5f; }
+
+.lbl{
+  width: 25%;
+}
+.ingresar{
+  width: 70%;
+    border-radius: 5px;
+    border-color: rgb(238, 241, 243);
+    background-color: rgb(238, 241, 243);
+    opacity: 0.9
+}
+.texttarea{
+	width: 96%;
+	border-radius: 5px;
+	border-color: rgb(238, 241, 243);
+	background-color: rgb(238, 241, 243);
+	opacity: 0.9
+  }
+
+  .acciones{
+    color: #362329;
+    position: relative;
+    display: block;
+	text-align: center;
+	font-size: 1.3rem;
+
+  }
+  .acciones:hover{
+    color: #2f6cc7;
+    
+  }
+  .select{
+	width: 70%;	  
+	padding: 1%;
+	border-radius: 5px;
+	border-color: rgb(238, 241, 243);
+	background-color: rgb(238, 241, 243);
+	opacity: 0.9
+  }

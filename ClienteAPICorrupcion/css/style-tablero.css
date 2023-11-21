@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-image: url(../images/fondo.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+.espacio{
+    margin: 2%;
+    font-size: 2rem;
+    color: #FFF;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+li {
+    list-style: none;
+}
+
+/* Menu lateral */
+.wrapper {
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+}
+#sidebar {
+    max-width: 264px;
+    min-width: 264px;
+    transition: all 0.35s ease-in-out;
+    box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
+    z-index: 1111;
+}
+.sidebar-logo {
+    padding: 1.15rem 1.5rem;
+}
+.sidebar-logo a {
+    color: #e9ecef;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.sidebar-nav {
+    padding: 0;
+}
+.sidebar-header {
+    color: #e9ecef;
+    font-size: 1rem;
+    padding: 1.5rem 1.5rem .375rem;
+}
+
+a.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: #e9ecef;
+    position: relative;
+    display: block;
+    font-size: 1rem;
+}
+.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: #e9ecef;
+    position: relative;
+    display: block;
+    font-size: 1rem;
+}
+/* Tablero */
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: transparent;
+}
+
+.content {
+    flex: 1;
+    max-width: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+.nuevoReporte{
+    background-color: #6e1d38;
+    border-radius: 10px;
+    color: #FFF;
+    padding: 1%;
+    margin: 1%;
+}
+.nuevoReporte:hover {
+    background: #a73b5f;
+    color: #fff !important;
+}
+
+.amplio{
+    width: 40%;
+}
+.botonventanas{
+    width: 80%;
+}
+.columnas{
+    background-color: #6e1d38;
+    color: #FFF;
+    
+}
+.registros{
+    background-color: #c4cfda;
+    opacity: 0.7;
+}
+.col1{
+    width: 5%;
+}
+.col2{
+    width: 50%;
+}
+.col3{
+    width: 15%;
+}
+
+.caja{    
+    width: 100%;
+    background-color: #c4cfda;
+    opacity: 0.9
+}
+.user{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.texto{
+    width: 15%;
+    background-color: transparent;
+}
+.txt{
+    width: 30%;
+    border-radius: 5px;
+    border-color: rgb(238, 241, 243);
+    background-color: rgb(238, 241, 243);
+    opacity: 0.9
+}
+.buscador{
+    width: 69%;
+    border-radius: 5px;
+    padding: 1%;
+    border-color: rgb(238, 241, 243);
+    background-color: rgb(238, 241, 243);
+    opacity: 0.9
+}
+.filtrar{
+    background-color: #6e1d38;
+    border-radius: 10px;
+    color: #FFF;
+    padding: 1%;
+    width: 15%;
+}
+
+
+/* Responsive */
+
+@media (min-width:768px) {
+    .content {
+        width: auto;
+    }
+}
+
+.eliminar{
+    background-color: transparent;
+        border: none;
+}
